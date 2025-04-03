@@ -9,14 +9,14 @@ public class Employee {
 		return this.fixedSalary;
 	}
 
-	double calculateBonus(Department department) {
+	public double calculateBonus(Department department) {
 		if (department.reachedTarget()) {
 			return this.fixedSalary / 10;
 		}
 		return 0;
 	}
 
-	double calculateTotalSalary(Department department) {
+	public double calculateTotalSalary(Department department) {
 		return this.fixedSalary + this.calculateBonus(department);
 	}
 }
