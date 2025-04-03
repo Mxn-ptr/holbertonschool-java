@@ -3,6 +3,6 @@ public class PrintFormattingNumbers {
 		float tax = 0.2456f;
 		float value = 7654.321f;
 		System.out.printf("Value: $%,.2f\n", value);
-		System.out.printf("Tax: %.2g%\n", tax);
+		System.out.printf("Tax: %.2f%%\n", tax);
 	}
 }
