@@ -1,4 +1,4 @@
-package basic_account.exceptions;
+package exceptions;
 
 public class InvalidOperationException extends Exception {
 	public InvalidOperationException(String message) {
