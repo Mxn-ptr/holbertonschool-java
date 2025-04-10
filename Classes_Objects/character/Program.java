@@ -1,5 +1,3 @@
-package character;
-
 public class Program {
 	public static void main(String[] args) {
 		CharacterGame character1 = new CharacterGame();
