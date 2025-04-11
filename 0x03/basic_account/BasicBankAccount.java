@@ -29,7 +29,7 @@ public class BasicBankAccount {
 		this.balance += value;
 	}
 
-	void withdraw(double value) throws Exception {
+	public void withdraw(double value) throws Exception {
 		if (value <= 0)
 			throw new InvalidOperationException("Withdrawal amount must be greater than 0");
 		else if ((this.balance - value) < 0)
@@ -38,17 +38,17 @@ public class BasicBankAccount {
 			this.balance -= value;
 	}
 
-	double calculateMonthlyFee() {
+	public double calculateMonthlyFee() {
 		return Math.min(this.balance / 10, 10);
 	}
 
-	double calculateMonthlyInterest() {
+	public double calculateMonthlyInterest() {
 		if (this.balance >= 0)
 			return this.balance * ((this.annualInterestRate / 12) / 100);
 		return 0;
 	}
 
-	void applyMonthlyUpdate() {
+	public void applyMonthlyUpdate() {
 		this.balance += calculateMonthlyInterest() - calculateMonthlyFee();
 	}
 }
