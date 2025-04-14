@@ -29,6 +29,6 @@ public class Rectangle extends GeometricShape {
 	}
 
 	public String toString() {
-		return String.format("[Rectange] %.2f / %.2f", this.width, this.height);
+		return String.format("[Rectangle] %.2f / %.2f", this.width, this.height);
 	}
 }
