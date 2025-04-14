@@ -16,6 +16,6 @@ public class Square extends Rectangle {
 	}
 
 	public String toString() {
-		return String.format("[Size] %.2f", this.size);
+		return String.format("[Square] %.2f", this.size);
 	}
 }
