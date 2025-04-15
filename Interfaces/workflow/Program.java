@@ -1,5 +1,3 @@
-package workflow;
-
 public class Program {
 	public static void main(String[] args) {
 		VideoProcessor videoProcessor1 = new VideoProcessor();

@@ -1,5 +1,3 @@
-package workflow;
-
 import java.util.ArrayList;
 
 public class VideoProcessor {

@@ -1,5 +1,3 @@
-package workflow;
-
 public enum MessageType {
 	WARNING,
 	ERROR,

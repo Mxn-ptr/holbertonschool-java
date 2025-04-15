@@ -1,5 +1,3 @@
-package workflow;
-
 public class Message {
 	private String text;
 	private MessageType messageType;
