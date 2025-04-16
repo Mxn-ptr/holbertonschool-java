@@ -1,7 +1,5 @@
-package workflow;
-
 import java.util.ArrayList;
-import workflow.activity.Activity;
+import activity.Activity;
 
 public class Workflow {
 	private ArrayList<Activity> activities;

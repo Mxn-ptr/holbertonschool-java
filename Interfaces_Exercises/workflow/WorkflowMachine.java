@@ -1,6 +1,4 @@
-package workflow;
-
-import workflow.activity.Activity;
+import activity.Activity;
 
 public class WorkflowMachine {
 	public void execute(Workflow worflow) {

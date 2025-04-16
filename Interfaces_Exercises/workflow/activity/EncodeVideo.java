@@ -1,4 +1,4 @@
-package workflow.activity;
+package activity;
 
 public class EncodeVideo implements Activity {
 	@Override
