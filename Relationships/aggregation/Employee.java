@@ -26,6 +26,6 @@ public class Employee {
 		System.out.println("Name: " + this.name);
 		System.out.println("District: " + this.address.getDistrict());
 		System.out.println("City: " + this.address.getCity());
-		System.out.println("Country: " + this.address.getCountry());
+		System.out.print("Country: " + this.address.getCountry());
 	}
 }
