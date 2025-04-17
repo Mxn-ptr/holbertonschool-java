@@ -8,7 +8,7 @@ import mood.VeryHappy;
 public class Character {
 	public int happinessPoints = 0;
 
-	public Mood getCurentMood() {
+	public Mood getCurrentMood() {
 		if (happinessPoints < -5) {
         return new Angry();
 		} else if (happinessPoints <= 0) {
@@ -28,6 +28,6 @@ public class Character {
 
 	@Override
 	public String toString() {
-		return String.format("%d - %s", happinessPoints, getCurentMood().getClass().getSimpleName());
+		return String.format("%d - %s", happinessPoints, getCurrentMood().getClass().getSimpleName());
 	}
 }
