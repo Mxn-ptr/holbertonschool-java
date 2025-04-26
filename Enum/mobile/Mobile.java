@@ -24,7 +24,7 @@ public class Mobile {
 	public void updateContact(Contact oldContact, Contact newContact) {
 		int position = this.getContactPosition(oldContact.getName());
 		if (position == -1)
-			throw new IllegalArgumentException("Could not add contact. Contact does not exist");
+			throw new IllegalArgumentException("Could not modify contact. Contact does not exist");
 		int newContactPosition = this.getContactPosition(newContact.getName());
 		if (newContactPosition >= 0 && newContactPosition != position)
 		throw new IllegalArgumentException("Could not modify contact. Contact with this name already exists");
