@@ -18,9 +18,9 @@ public class PhoneList {
             HashSet<Phone> phones = list.get(otherName);
             if (phones != null && phones.contains(phone)) {
                 if (otherName.equals(name)) {
-                    throw new RuntimeException("Phone already exists for this person.");
+                    throw new RuntimeException("Phone already exists for this person");
                 } else {
-                    throw new RuntimeException("Phone already belongs to another person.");
+                    throw new RuntimeException("Phone already belongs to another person");
                 }
             }
         }
