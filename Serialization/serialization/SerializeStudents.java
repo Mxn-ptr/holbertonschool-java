@@ -16,10 +16,10 @@ public class SerializeStudents<T extends Serializable> {
         }
     }
 
+    @SuppressWarnings("unchecked")
     public List<T> deserialize() {
         try (ObjectInputStream objectInputStream = new ObjectInputStream(new FileInputStream(filename))) {
-            List<T> students = (List<T>) objectInputStream.readObject();
-            return students;
+            return (List<T>) objectInputStream.readObject();
         } catch (Exception e) {
             System.out.println("Unable to deserialize");
             return List.of();
